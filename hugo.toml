@@ -1,0 +1,73 @@
+# hugo.toml
+
+# 这里可以填真实网址，也可以暂时留空
+baseURL = "https://aaa.bbb.com/" 
+
+# 【关键设置】开启这两项，通常能解决 99% 的样式丢失问题
+relativeURLs = true
+canonifyURLs = true
+
+title = "芹菜的blog"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh-cn"
+theme = "relearn"
+
+[languages]
+  [languages.zh-cn]
+    languageName = "中文"
+    weight = 1
+    title = "芹菜的blog"
+[module]
+  [module.hugoVersion]
+    min = '0.141.0'
+
+[mediaTypes]
+  [mediaTypes.'text/javascript']
+    suffixes = ['js']
+
+[outputFormats]
+  [outputFormats.print]
+    name= 'print'
+    baseName = 'index.print'
+    isHTML = true
+    mediaType = 'text/html'
+    permalinkable = false
+    noUgly = true
+
+  [outputFormats.source]
+    name= 'source'
+    baseName = 'index.source'
+    isHTML = false
+    mediaType = 'text/markdown'
+    permalinkable = false
+    noUgly = true
+
+  # unused since 7.0.0 but left in here to generate warnings
+  [outputFormats.search]
+    name= 'search'
+    baseName = 'index.searchindex'
+    isHTML = true
+    mediaType = 'text/html'
+    permalinkable = false
+    noUgly = true
+
+  # unused since 7.0.0 but left in here to generate warnings
+  [outputFormats.searchpage]
+    name= 'searchpage'
+    baseName = 'index.searchpage'
+    isHTML = true
+    mediaType = 'text/html'
+    permalinkable = false
+    noUgly = true
+
+[params.relearn.dependencies]
+  [params.relearn.dependencies.math]
+    name = 'Math'
+  [params.relearn.dependencies.mermaid]
+    name = 'Mermaid'
+  [params.relearn.dependencies.openapi]
+    name = 'OpenApi'
+  [params.relearn.dependencies.search]
+    name = 'Search'
+  [params.relearn.dependencies.theme]
+    name = 'Theme'
