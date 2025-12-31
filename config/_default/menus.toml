@@ -1,0 +1,23 @@
+[[main]]
+  identifier = "home"
+  name = "首页"
+  url = "/"
+  weight = 1
+
+  [[main]]
+  identifier = "blog"
+  name = "博客"
+  url = "/posts/"
+  weight = 2
+
+  [[main]]
+  identifier = "plan"
+  name = "学习资料"
+  url = "/plan/"
+  weight = 3
+
+  [[main]]
+  identifier = "home"
+  name = "灵感"
+  url = "/review/"
+  weight = 4
